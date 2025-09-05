@@ -1,0 +1,19 @@
+.magazine-spread {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.mag-page {
+    max-width: 32vw;
+}
+
+.scrollbutton {
+    font-family: "Fredoka", sans-serif;
+    color: #ff744e;
+    font-weight: bold;
+    font-size: 6vh;
+    cursor: pointer;
+}

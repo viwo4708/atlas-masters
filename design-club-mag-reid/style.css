@@ -17,3 +17,16 @@
     font-size: 6vh;
     cursor: pointer;
 }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 70vw;
+  margin-top: -3.5vh;
+}
+
+a {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: bold;
+  color: #ff744e;
+}

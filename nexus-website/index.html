@@ -9,38 +9,245 @@
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Quicksand:wght@300..700&family=Racing+Sans+One&display=swap" rel="stylesheet"></head>
 <body>
     <div class="pageheader">
-        <div class="title">
-            <h1>nexus acapella</h1>
+        <div class="title" style="font-size: 3vw;">
+            <a style="text-decoration: none;" href="#home">nexus acapella</a>
         </div>
         <div class="navbar">
-            <div>Auditions/Rehearsals</div>
-            <div>Concerts</div>
-            <div>Leadership</div>
-            <div>About</div>
-            <div>Contact</div>
+            <div><a href="#concerts">Concerts</a></div>
+            <div><a href="#auditions-rehearsals">Auditions/Rehearsals</a></div>
+            <div><a href="#leadership">Leadership</a></div>
+            <div><a href="#contact">Contact</a></div>
+            <div><a href="#about">About</a></div>
         </div>
     </div>
-    <div class="heroimage">
+    <div class="fullwidthimage" id="home">
         <img src="./assets/nexus-group-photo.jpg" width="100%">
-        <div class="herotext">
+
+        <div 
+        class="imageoverlaytext"
+        style=" 
+            top: 67%;
+            font-weight: 300;
+            font-size: 3vw;
+            width: 50%;"
+        >
             Colorado's Community Acapella Group
         </div>
+        <div 
+        class="imageoverlaytext"
+        style="
+            top: 87%;
+            font-weight: 200;
+            font-size: 2vw;
+            width: 50%;
+            display: flex;
+            gap: 1vw;
+            align-items: center;"
+        >
+            <a href="https://www.instagram.com/nexusacapella/?hl=en" target="_blank">Follow us</a><img style="width: 2vw;" src="./assets/Instagram_Glyph_White.png">
+        </div>
     </div>
-   
-   <div style="font-size: 5vh; padding-left: 3vw; padding-right: 3vw; padding-bottom: 3vh; padding-top: 3vh;">
-    <p>
-        Nexus Acapella strives to bring together singers of different ages, backgrounds, and genders. 
-        We perform mostly original arrangements sourced from group members, covering a wide range of genres
-        with a focus on contemporary popular music. We hold social events, make connections outside of rehearsals,
-        and share a love of singing and musical excellence. 
-    </p>
-    <br>
-    <p>
-        We hope to see you at one of our concerts, or at auditions!
-    </p>
-    <br>
-    <p>Follow us on Instagram @nexusacapella to keep up with auditions, concert dates and tickets, and more!</p>
-   </div>
-    
+
+    <div class="fullwidthimage" id="concerts">
+        <img src="./assets/spotlight.png" width="100%">
+        <div 
+        class="imageoverlaytext"
+        style="
+            top: 18%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3vw;"
+        >
+        Concert: March 28th, 7pm
+        </div>
+        <div 
+        class="imageoverlaytext"
+        style="
+            top: 26%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2vw;"
+        >
+        <a href="https://maps.app.goo.gl/9Lzd6Nsa8ykwwm3N7" target="blank">The Arts Hub, 420 Courtney Way, Lafayette, CO 80026</a>
+        </div>
+        <div 
+        class="imageoverlaytext"
+        style="
+            top: 33%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.7vw;
+            font-weight: 300;"
+        >
+        Check back later for ticket information!
+        </div>
+    </div>
+
+    <div class="fullwidthimage" id="auditions-rehearsals">
+        <img style="opacity: 0.25;" src="./assets/keys.jpg" width="100%">
+        <div 
+        class="imageoverlaytext"
+        style=" 
+            top: 20%;
+            font-weight: 300;
+            font-size: 3vw;
+            width: 50%;"
+        >
+            Do you love to sing?
+        </div>
+        <div 
+        class="imageoverlaytext"
+        style=" 
+            top: 32%;
+            font-size: 2vw;
+            font-weight: 100;
+            width: 80%;"
+        >
+            Whether you have formal singing experience and musical training, or you just can't help singing in the shower, 
+            we'd love to hear your voice!
+            <br>
+            <br>
+            Initial auditions consist of a 30 second-1 minute solo of your choice performed without accompaniment, a range test, and an
+            aural skills assessment. 
+            <br>
+            <br>
+            We hold auditions once a year, next date TBA. 
+            <br>
+            <br>
+            Currently rehearsing Sundays 6-8pm at <a href="https://www.artshub.org/" target="blank">The Arts Hub in Lafayette</a>.
+        </div>
+    </div>
+
+        <div class="fullwidthsection" id="leadership"
+        style="display: flex;
+               flex-direction: row;
+               gap: 4vw;
+               justify-content: center;
+               align-items: center;"
+        >
+            <div>
+                <img style="width: 40vw;" src="./assets/headshot.jpg" alt="headshot of brandon warren, the director of nexus acapella">
+            </div>
+            <div>
+                <div style=" 
+                        font-size: 2.5vw;
+                        font-family: Onest, sans-serif;
+                        font-weight: 300;
+                        color: white;"">
+                    Music Director: Brandon Warren
+                    <br>
+                    <br>
+                </div>
+                <div style="
+                        font-size: 1.5vw;
+                        font-family: Onest, sans-serif;
+                        font-weight: 100;
+                        color: white;">
+                        Before directing Nexus Acapella, Brandon Warren directed the collegiate acapella group On That Note at CU Boulder.
+                        He is a talented and knowledgeable musician with extensive experience in musical theater, vocal arranging and directing, 
+                        and transcribing pieces that mortal ears simply couldn't parse. His current day job is teaching high school mathematics,
+                        and he is also an avid player of dungeons and dragons and Clone Hero (which is Guitar Hero but with WAY harder levels). 
+                        His leadership style is warm and inclusive, and he seeks to bring out the unique talent of every singer in the group. 
+                </div>
+            </div>
+        </div>
+
+        <div class="fullwidthsection" 
+        style="display: flex;
+               flex-direction: row;
+               gap: 4vw;
+               justify-content: center;
+               align-items: center;"
+        >
+            <div>
+                <div style=" 
+                        font-size: 2.5vw;
+                        font-family: Onest, sans-serif;
+                        font-weight: 300;
+                        color: white;"">
+                    Assistant Director: Chris Warren
+                    <br>
+                    <br>
+                </div>
+                <div style="
+                        font-size: 1.5vw;
+                        font-family: Onest, sans-serif;
+                        font-weight: 100;
+                        color: white;">
+                        Skilfish greeneye southern smelt cepalin titan triggerfish American sole deep sea anglerfish. 
+                        Warty angler Blind shark pearlfish roundhead hake buffalofish tonguefish bigscale fish, 
+                        velvet-belly shark, sand dab snipefish paddlefish, yellowhead jawfish barbel pikeblenny. 
+                        Sacramento blackfish pelagic cod alligatorfish barred danio tommy ruff orbicular batfish 
+                        fingerfish kappy remora, bramble shark. River stingray Atlantic silverside. Slimy mackerel, 
+                        barbeled dragonfish tope sailfish oldwife, deep sea smelt; crocodile shark Long-finned sand diver, 
+                        noodlefish channel bass. Pink salmon sweeper kappy drum arrowtooth eel.
+                </div>
+            </div>
+
+            <div>
+                <img style="width: 40vw;" src="./assets/headshot2.jpg" alt="headshot of brandon warren, the director of nexus acapella">
+            </div>
+        </div>
+
+        <div class="fullwidthsection" id="contact" 
+        style="display: flex;
+               flex-direction: row;
+               gap: 4vw;
+               justify-content: center;
+               align-items: center;"
+        >
+            <div>
+                <img style="width: 40vw;" src="./assets/nexus-pic.jpg" alt="headshot of chris warren, the assistant director of nexus acapella">
+            </div>
+            <div>
+                <div style=" 
+                        font-size: 2.5vw;
+                        font-family: Onest, sans-serif;
+                        font-weight: 300;
+                        color: white;">
+                    Got questions? Want to say hello?
+                    <br>
+                    <br>
+                </div>
+                <div style="
+                        font-size: 1.5vw;
+                        font-family: Onest, sans-serif;
+                        font-weight: 100;
+                        color: white;">
+                        Email us at <a href="mailto:nexusacapella@gmail.com">nexusacapella@gmail.com</a>
+                        <br>
+                        <br>
+                        Or DM us on IG <a href="https://www.instagram.com/nexusacapella/?hl=en" target="_blank">@nexusacapella</a>
+                </div>
+            </div>
+        </div>
+
+    <div class="fullwidthimage" id="about">
+        <img src="./assets/otn-group.jpg" width="100%">
+        <div 
+        class="imageoverlaytext"
+        style="bottom: 5vh;
+                right: 2vw;
+                width: 40vw;
+                font-size: 1.5vw;
+                font-weight: 100;
+                background-color: rgba(0, 0, 0, 0.75);
+                padding: 1.5vw;">
+            After graduating from CU Boulder, a group of alumni from collegiate acapella group On That Note wanted to start a new 
+            acapella group that was open to anyone, not just college students. After reaching out to connections in the local
+            performing arts community, as well as putting out a social media blast on every platform imaginable (hello, redditors!), 
+            Nexus Acapella was assembled in 2024. Nexus performs mostly original arrangements of contemporary music genres sourced 
+            from group members.
+    </div>
+    </div>
+
+    <div class="fullwidthsection">
+        <p style="font-size: .75vw; text-align: center;">
+            <a href="https://github.com/viwo4708/atlas-masters/tree/main/nexus-website" target="blank">built by Vikki Wong 2025</a>
+        </p>
+
+    </div>
+
+
 </body>
 </html>

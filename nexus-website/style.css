@@ -69,3 +69,21 @@ a {
 a:hover{
     color: #999999;
 }
+
+#mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+      #pc {
+        display: none;
+      }
+    
+      #mobile {
+        display: block;
+      }
+    
+      body {
+        overflow-y: scroll;
+      }
+}

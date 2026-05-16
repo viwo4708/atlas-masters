@@ -1,0 +1,7 @@
+Multiple Choice
+What does a constructor do?
+Destroys an object
+Initializes an object
+Copies an object
+Nothing
+2

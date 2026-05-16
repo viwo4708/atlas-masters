@@ -1,0 +1,48 @@
+.plantcard {
+  flex: 0 0 30%;
+  overflow: hidden;
+  height: 90vh;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #bff5b4;
+  border-radius: 30px;
+}
+
+.card-image {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 0;
+  object-fit: cover;
+  
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-title {
+  margin: 0 0 8px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.card-subtitle {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.card-description {
+  color: #555;
+  font-size: 1rem;
+}
+
+dt {
+    float: left;
+}
+
+
+dd {
+  margin-left: 50%;
+}

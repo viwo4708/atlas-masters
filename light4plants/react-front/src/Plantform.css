@@ -1,0 +1,22 @@
+/* Container styling */
+.plant-form {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  margin: 0 auto;          /* Centers the entire form on the page */
+  text-align: center;
+}
+
+/* Error text positioning */
+.error-text {
+  font-size: 1rem;
+  color: red;
+  display: block;
+}
+
+label {
+    margin-left: 1%;
+    font-size: 1.2rem;}
+
+option, select {
+    font-size: 1.2rem;
+}

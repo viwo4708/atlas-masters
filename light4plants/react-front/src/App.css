@@ -1,0 +1,21 @@
+.plantgrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.pagetitle {
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .plantgrid {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,58 @@
+h1 {
+  font-family: "Gluten", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 10vh;
+  color: #0a4417;
+}
+
+h2, h3 {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, dt, dd, form, select, option {
+  font-family: "Cause", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: black;
+}
+
+button {
+  font-family: "Cause", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-size: 1.3vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  border-width: 0;
+  background-color: #0a4417;
+  color: white;
+}
+
+button:hover {
+    background-color: #2b9a43;
+}
+
+body {
+  background-color: #d3ffca;
+}
+
+
+@media (max-width: 650px) {
+  .plant-form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    width: 50vw;
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 2vh;
+  }
+}

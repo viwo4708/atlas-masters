@@ -13,9 +13,9 @@ const io = new Server(server, { cors: { origin: "*" } });
 //Serve p5.js files from the current folder. no filename means entire folder is served
 app.use(express.static('./'));
 
-//3. Setup Serial Port (Check COM port in Device Manager!)
+// 3. Setup Serial Port (Check COM port in Device Manager!) (DISABLE OR ENABLE TO DEMO WITHOUT CONTROLER)
 const arduinoPort = new SerialPort({ 
-  path: 'COM5', 
+  path: 'COM6', 
   baudRate: 9600 
 });
 
@@ -88,6 +88,8 @@ io.on('connection', (socket) => {
   });
 
 });
+
+//ENABLE OR DISABLE TO DEMO WITHOUT CONTROLLER
 
 parser.on('data', (data) => {
   let cleanData = data.trim();

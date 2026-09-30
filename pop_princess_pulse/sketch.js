@@ -1,4 +1,4 @@
-let poseImages = [];
+let poseImages = []; //array to hold the pose images for animation
 let totalPoses = 11;
 
 
@@ -14,7 +14,7 @@ let hitWindow = .085;
 
 let trackX;
 let targetY;
-let barWidth = 120;
+let barWidth = 120;//determines size of falling "notes" and target
 let barHeight = 24;
 
 let redHeart;
@@ -30,7 +30,7 @@ let spikeThreshold = 0.1;
 let clapThreshold = .2;
 let isClapping = false;
 
-let dancerOpacity = 255;  // 255 is fully visible, 0 is fully invisible
+let dancerOpacity = 255;  // 255 is fully visible, 0 is fully invisible //also i don't think this actually works lol
 let isGameOver = false;
 
 function preload() {
@@ -38,10 +38,10 @@ function preload() {
     blackHeart = loadImage("./image_assets/black_pixel_heart.png");
 
     for(let i = 1; i <= totalPoses; i++) {
-        poseImages.push(loadImage(`./image_assets/poses/frame${i}.png`));
+        poseImages.push(loadImage(`./image_assets/poses/frame${i}.png`)); //load all image assets
     }
 
-    song = loadSound("./audio_assets/stateside_zara_pink.mp3");
+    song = loadSound("./audio_assets/stateside_zara_pink.mp3"); //load audio for song
 }
 
 function setup() {
@@ -52,7 +52,7 @@ function setup() {
 
   targetY = windowHeight * .85;
 
-  buildLevel();
+  buildLevel(); //see buildLevel function
 }
 
 function draw() {
@@ -74,7 +74,7 @@ function draw() {
 
     drawHearts();
 
-    let currentTime = song.currentTime();
+    let currentTime = song.currentTime(); //i think all of this code would be better wrapped in a function but oh well
 
     //targetbar
     fill(255, 255, 255, 80);
@@ -84,7 +84,7 @@ function draw() {
 
     //draw incoming notes!!
     //for EVERY DRAW LOOP, it checks every note in the array and draws the ones that need to be on screen!
-    for(let i = notes.length - 1; i>=0; i--) {
+    for(let i = notes.length - 1; i>=0; i--) { //loops backwards to prevent errors from index shifting when removing elements
         let note = notes[i];
         let timeDiff = note.targetTime - currentTime;
 
@@ -97,7 +97,7 @@ function draw() {
         }
 
             //check for missed notes!
-        if(!note.hit && !note.missed && timeDiff < -hitWindow) {
+        if(!note.hit && !note.missed && timeDiff < -hitWindow) {//if the hitwindow has passed and the note is not hit
             note.missed = true;
             console.log("MISSED NOTE");
             loseLife();
@@ -131,7 +131,7 @@ function triggerClap() {
 
     //find closest unhit hote
     for (let note of notes) {
-        if(!note.hit && !note.missed) {
+        if(!note.hit && !note.missed) {//for all existing notes, figure out which one's hit time is closest to the TIME THE CLAP OCCURS
             let diff = Math.abs(currentTime - note.targetTime);
             if(diff < smallestDiff) {
                 smallestDiff = diff;
@@ -140,13 +140,13 @@ function triggerClap() {
         }
     }
 
-    if (closestNote && smallestDiff <= hitWindow) {
+    if (closestNote && smallestDiff <= hitWindow) {//if the clap occurs within the hit window of the closest note
         closestNote.hit = true;
         console.log("HIT!")
         gainLife();
         //TODO: have some indicator of success
     } else {
-        console.log("MISS!");
+        console.log("MISS!"); //catches claps that don't line up with a note
         loseLife();
     }
 }
@@ -156,21 +156,21 @@ function keyPressed() {
     triggerClap();
   }
   
-  if (key === 'a' || key === 'A') { // 'A' Key
-    let futureTime = (millis() / 1000.0) + 2.0;
-    notes.push({ targetTime: futureTime, hit: false, missed: false });
-    console.log("Spawned note for t = " + futureTime.toFixed(2) + "s");
-  }
+//   if (key === 'a' || key === 'A') { // 'A' Key //code to spawn notes for testing
+//     let futureTime = (millis() / 1000.0) + 2.0;
+//     notes.push({ targetTime: futureTime, hit: false, missed: false });
+//     console.log("Spawned note for t = " + futureTime.toFixed(2) + "s");
+//   }
 }
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   trackX = windowWidth * 0.875;
-  targetY = windowHeight * 0.85;
+  targetY = windowHeight * 0.85; //handles dyamic resizing
 }
 
 function drawHearts() {
-    let heartX = windowWidth * .2;
+    let heartX = windowWidth * .2; //horizontal position of hearts
     let heartSize = 70;
     let blackheartSize = 55;
     let spacing = 80;
@@ -220,7 +220,7 @@ function buildLevel() {
 
     for (let i = 0; i < rhythmGrid.length; i++) {
         if(rhythmGrid[i] === 1) {
-            let targetTime = audioOffset + (i * tickduration);
+            let targetTime = audioOffset + (i * tickduration);//each element of hte grid is an 8th note
 
             notes.push({
                 targetTime: targetTime,
@@ -324,5 +324,5 @@ function checkMicClap() {
         isClapping = false;
     }
 
-    previousVolume = currentVolume;
+    previousVolume = currentVolume; //detects claps by detecting spikes in mic volume
 }

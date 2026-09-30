@@ -50,7 +50,7 @@ const rhythmGrid = [
     0,0,   1,0,   0,0,   1,0,   0,0,   0,0,   0,0,   1,0, // ooh whoa ooh whoa
     1,0,   1,0,   0,0,   0,0,   0,0,   0,0,   1,0,   1,0, //ooh whoa oooh whoahoaha
 
-    0,1,   0,1,   0,1,   0,1,   1,1,   1,1,   1,1,   1,1, //what can i say, what can i do
+    0,1,   0,1,   0,1,   0,1,   0,0,   1,0,   0,0,   1,0, //what can i say, what can i do
     1,1,   1,1,   1,0,   0,0,   0,0,   1,0,   0,0,   1,0, // i tryna be the girl that you're talking to
     1,0,   1,0,   0,0,   0,0,   1,0,   1,0,   1,0,   1,0, // and maybe you can be my american hot hot boy
     1,0,   1,0,   0,0,   0,0,   1,0,   1,1,   1,1,   1,0, //you can be my american hot hot boy
